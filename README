@@ -2,6 +2,16 @@
 ------------
 
 
+## Requirement & Installation
+
+Install Java 8
+```
+apt-add-repository ppa:webupd8team/java
+apt-get update
+apt-get install oracle-java8-installer
+```
+
+
 ## ToDo
 ------------
 * Using own class, interface and repo
@@ -9,3 +19,4 @@
 * Layout application
 * EBean validation
 * Form submission and error handling
+* Master NginX
