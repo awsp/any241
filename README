@@ -1,0 +1,11 @@
+## App Sample, using Play Framework (version 2.4.1)
+------------
+
+
+## ToDo
+------------
+* Using own class, interface and repo
+* Connect datdabase and access it.
+* Layout application
+* EBean validation
+* Form submission and error handling
