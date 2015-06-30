@@ -9,7 +9,7 @@ import views.html.*;
 public class Application extends Controller {
 
     public Result index() {
-	    Content html = (Content) index.render("ddd");
+	    Content html = (Content) index.render("Hello World.");
 	    return ok(html);
     }
 
