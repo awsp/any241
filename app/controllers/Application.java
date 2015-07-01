@@ -10,17 +10,16 @@ import javax.inject.Inject;
 
 
 public class Application extends Controller {
-	@Inject
-	protected PageRepoInterface pageRepo;
+    protected PageRepoInterface pageRepo;
 
-	@Inject
-	public Application(PageRepoInterface pageRepo) {
-		this.pageRepo = pageRepo;
-	}
+    @Inject
+    public Application(PageRepoInterface pageRepo) {
+        this.pageRepo = pageRepo;
+    }
 
     public Result index() {
-	    Content html = index.render(this.pageRepo.sayHello());
-	    return ok(html);
+        Content html = index.render(this.pageRepo.sayHello());
+        return ok(html);
     }
 
 }
