@@ -12,11 +12,69 @@ apt-get install oracle-java8-installer
 ```
 
 
-## ToDo
+## Objectives
 ------------
-* Using own class, interface and repo
-* Connect datdabase and access it.
-* Layout application
-* EBean validation
-* Form submission and error handling
-* Master NginX
+* Classes & Interfaces
+* Repositories in practice
+* Dependency Injection - [DepInjectionExample.java]
+* Database 
+    * Access        
+    * Query Builder
+    * Various Database Type
+        * MySQL
+        * DB2
+        * Orcale
+        * MongoDB
+        * MSSQL
+        * PostgreSQL
+    * ORM - EBean
+        * Basic CRUD
+        * Relationships
+            * 1-1
+            * 1-n
+            * m-n
+            * Polymorphic relations
+        * Validation
+    * Configurations
+    * Migrations and Evolutions
+    * Pagination
+* Routes
+    * Wildcard supports including reg. expressions
+    * REST supports, resourceful controller
+    * Errors handling. (404, 500, etc)
+    * Grouping
+* Email
+    * Send email    
+* Templating
+    * Data communication
+    * Imports, includes and injects
+    * Layout setup        
+* Assets
+    * Static serving
+    * LESS
+* Forms
+    * Validation
+    * CRUD
+    * GET-POST-Redirect
+    * Error handling
+* Sessions
+    * Maintaining user sessions
+    * Save/Load sessions
+* Authentication
+    * User authentication
+    * Route protection
+    * Security filters
+* Localization
+    * I18n supports
+* Unit Testing
+    * JUnit
+* Other / Unrelated
+    * NginX
+        * Load balancer
+        * Proxy
+    * Plugins / Libraries supports    
+        * SBT
+            * Load 3rd party libraries
+        * J2SE
+        * Custom written libraries
+    
