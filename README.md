@@ -1,10 +1,10 @@
-## App Sample, using Play Framework (version 2.4.1)
+## App Sample, using Play Framework (version 2.4.2)
 ------------
 
 
 ## Requirement & Installation
 
-Install Java 8
+Install Java 8 on Ubuntu
 ```
 apt-add-repository ppa:webupd8team/java
 apt-get update
@@ -14,8 +14,8 @@ apt-get install oracle-java8-installer
 
 ## Objectives
 ------------
-* Classes & Interfaces
-* Repositories in practice
+* Classes & Interfaces [OK]
+* Repositories in practice [DbPageRepo.java, PageRepoInterface.java]
 * Dependency Injection - [DepInjectionExample.java]
 * Database 
     * Access        
