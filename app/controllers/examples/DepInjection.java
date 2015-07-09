@@ -1,17 +1,17 @@
-package controllers;
+package controllers.examples;
 
 import play.mvc.Controller;
 import play.mvc.Result;
 import play.twirl.api.Content;
-import repo.*;
+import repo.interfaces.PageRepo;
 import views.html.*;
 import javax.inject.Inject;
 
-public class DepInjectionExample extends Controller {
-    protected PageRepoInterface pageRepo;
+public class DepInjection extends Controller {
+    protected PageRepo pageRepo;
 
     @Inject
-    public DepInjectionExample(PageRepoInterface pageRepo) {
+    public DepInjection(PageRepo pageRepo) {
         this.pageRepo = pageRepo;
     }
 

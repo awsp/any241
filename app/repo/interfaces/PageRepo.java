@@ -1,8 +1,9 @@
-package repo;
+package repo.interfaces;
 
 import com.google.inject.ImplementedBy;
+import repo.implementations.DbPageRepo;
 
 @ImplementedBy(DbPageRepo.class)
-public interface PageRepoInterface {
+public interface PageRepo {
     public String sayHello();
 }

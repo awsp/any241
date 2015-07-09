@@ -21,14 +21,14 @@ apt-get install oracle-java8-installer
     * Access        
     * Query Builder
     * Various Database Type
-        * MySQL
+        * MySQL [OK]
         * DB2
         * Orcale
         * MongoDB
         * MSSQL
         * PostgreSQL
     * ORM - EBean
-        * Basic CRUD
+        * Basic CRUD [EBeanModel]
         * Relationships
             * 1-1
             * 1-n
