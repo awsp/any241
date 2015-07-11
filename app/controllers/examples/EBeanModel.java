@@ -1,7 +1,6 @@
 package controllers.examples;
 
 import com.avaje.ebean.Model;
-import com.avaje.ebean.Query;
 import models.Page;
 import play.libs.Json;
 import play.mvc.Controller;

@@ -2,14 +2,17 @@
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 
-GET        /                               controllers.Application.index()
-GET        /dep-injection                  controllers.examples.DepInjection.index()
-GET        /ebean-example/insertion        controllers.examples.EBeanModel.insertion()
-GET        /ebean-example/updates          controllers.examples.EBeanModel.updates()
-GET        /ebean-example/deletion         controllers.examples.EBeanModel.deletion()
-GET        /ebean-example/json             controllers.examples.EBeanModel.resultWithJsonResponse()
-GET        /ebean-example/text             controllers.examples.EBeanModel.resultWithPlainString()
-GET        /ebean-example/search-by        controllers.examples.EBeanModel.searchBy()
+GET        /                                               controllers.Application.index()
+GET        /dep-injection                                  controllers.examples.DepInjection.index()
+GET        /ebean-example/insertion                        controllers.examples.EBeanModel.insertion()
+GET        /ebean-example/updates                          controllers.examples.EBeanModel.updates()
+GET        /ebean-example/deletion                         controllers.examples.EBeanModel.deletion()
+GET        /ebean-example/json                             controllers.examples.EBeanModel.resultWithJsonResponse()
+GET        /ebean-example/text                             controllers.examples.EBeanModel.resultWithPlainString()
+GET        /ebean-example/search-by                        controllers.examples.EBeanModel.searchBy()
+GET        /router-example/iem                             controllers.examples.RouterRelated.internalErrorMessage()
+GET        /router-example/param/:foo/:bar                 controllers.examples.RouterRelated.getRouteParam(foo: Integer, bar: Integer)
+GET        /router-example/regexp/$page<p[0-9]+>.foo        controllers.examples.RouterRelated.getRegExpParam(page: String)
 
 # Map static resources from the /public folder to the /assets URL path
-GET        /assets/*file                   controllers.Assets.versioned(path="/public", file: Asset)
+GET        /assets/*file                                   controllers.Assets.versioned(path="/public", file: Asset)
