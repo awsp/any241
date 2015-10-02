@@ -1,7 +1,12 @@
 package controllers.examples;
 
+import play.Logger;
 import play.mvc.Controller;
 import play.mvc.Result;
+
+import java.util.Arrays;
+import java.util.Map;
+import java.util.Set;
 
 /**
  * Router Related Example
@@ -40,7 +45,16 @@ public class RouterRelated extends Controller {
      * @return Result
      */
     public Result getRegExpParam(String id) {
-        return ok(id.toString());
+        return ok(id);
     }
 
+    public Result getQueryString() {
+        final Set<Map.Entry<String, String[]>> queryString = request().queryString().entrySet();
+        for (Map.Entry<String,String[]> entry: queryString) {
+            final String key = entry.getKey();
+            final String value = Arrays.toString(entry.getValue());
+            Logger.debug(key + ": " + value);
+        }
+        return ok("Query String");
+    }
 }
