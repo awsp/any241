@@ -10,20 +10,23 @@ import java.util.List;
 
 /**
  * EBean Model Example
- * <p>
+ * 
  * Steps to use EBean ORM to communicate to database.
- * Step 1: Enable `db.default.driver`, `db.default.url="jdbc:h2:mem:play"`, `db.default.user=sa`, `db.default.password=""`
+ *   - Step 1: 
+ *     Enable `db.default.driver`, `db.default.url="jdbc:h2:mem:play"`, `db.default.user=sa`, `db.default.password=""`
  * from `application.conf`
- * Notes for Step 1
- * Note 1-1: Default datasource is `default`
- * Note 1-2: Available drivers, for H2: org.h2.Driver, for MySQL: com.mysql.jdbc.Driver
- * <p>
- * Step 2: Enable EBean Model configuration. (Insert code if it isn't in comment).
- * By default, the package location is at models. `ebean.default = ["models.*"]`
- * Notes for Step 2
- * Note 2-1: This will enable evolution and will let you apply evolution.
- * <p>
- * Step 3: Apply script!
+ *
+ *     Notes for Step 1
+ *       Note 1-1: Default datasource is `default`
+ *       Note 1-2: Available drivers, for H2: org.h2.Driver, for MySQL: com.mysql.jdbc.Driver
+ * 
+ *   - Step 2: Enable EBean Model configuration. (Insert code if it isn't in comment).
+ *     By default, the package location is at models. `ebean.default = ["models.*"]`
+ *
+ *     Notes for Step 2
+ *       Note 2-1: This will enable evolution and will let you apply evolution.
+ * 
+ *   - Step 3: Apply script!
  *
  *
  * TODO: Batch insertion
