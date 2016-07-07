@@ -25,7 +25,7 @@ public class RouterRelated extends Controller {
      * @return Result
      */
     public Result internalErrorMessage() {
-        return internalServerError("This page is intended left to be having internal server error. ");
+        return internalServerError("This page is left to be intended to throw internal server error. ");
     }
 
     /**
